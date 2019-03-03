@@ -5,12 +5,18 @@ import com.roncoo.eshop.nventory.eshopinventory.service.ProductInventoryService;
 
 /**
  * 重新加载商品库存的缓存
+ * @author 44644
  */
 public class ProductInventoryCacheRefreshRequest implements Request {
 
     private Integer productId;
 
     private ProductInventoryService productInventoryService;
+
+    /**
+     * 是否强制刷新缓存
+     */
+    private boolean forceRefresh;
 
 
     public ProductInventoryCacheRefreshRequest(Integer productId, ProductInventoryService productInventoryService) {

@@ -5,6 +5,9 @@ import com.roncoo.eshop.nventory.eshopinventory.request.Request;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Callable;
 
+/**
+ * @author 44644
+ */
 public class RequestProcessorThread implements Callable<Boolean> {
     /**
      * 自己监控的内存队列
@@ -31,3 +34,4 @@ public class RequestProcessorThread implements Callable<Boolean> {
         return false;
     }
 }
+

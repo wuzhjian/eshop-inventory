@@ -7,6 +7,8 @@ import com.roncoo.eshop.nventory.eshopinventory.request.Request;
  * @author 44644
  */
 public interface RequestAsyncProcessService {
+
+
     void process(Request request);
 
 }

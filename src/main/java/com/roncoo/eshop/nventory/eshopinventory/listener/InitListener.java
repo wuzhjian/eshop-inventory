@@ -10,6 +10,7 @@ import javax.servlet.ServletContextListener;
  * @author 44644
  */
 public class InitListener implements ServletContextListener {
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         RequestProcessorThreadPool.init();

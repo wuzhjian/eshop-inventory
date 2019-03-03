@@ -5,6 +5,8 @@ package com.roncoo.eshop.nventory.eshopinventory.request;
  * @author 44644
  */
 public interface Request {
+
     void process();
+
     Integer getProduceId();
 }

@@ -4,6 +4,7 @@ import com.roncoo.eshop.nventory.eshopinventory.model.ProductInventory;
 
 /**
  * 商品库存接口
+ * @author 44644
  */
 public interface ProductInventoryService {
     /**
@@ -30,4 +31,11 @@ public interface ProductInventoryService {
      * @param productInventoryCache
      */
     void setProductInventoryCache(ProductInventory productInventoryCache);
+
+    /**
+     * 获取商品库存的缓存
+     * @param productId
+     * @return
+     */
+    ProductInventory getProductInventoryCache(Integer productId);
 }

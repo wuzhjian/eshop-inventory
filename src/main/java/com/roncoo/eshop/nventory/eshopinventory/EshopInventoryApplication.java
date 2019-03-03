@@ -23,6 +23,9 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author 44644
+ */
 @SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan
@@ -65,9 +68,9 @@ public class EshopInventoryApplication {
     @Bean
     public JedisCluster JedisClusterFactory() {
         Set<HostAndPort> jedisCLusterNodes = new HashSet<HostAndPort>();
-        jedisCLusterNodes.add(new HostAndPort("192.168.1.69",7001));
-        jedisCLusterNodes.add(new HostAndPort("192.168.1.70",7003));
-        jedisCLusterNodes.add(new HostAndPort("192.168.1.71",7005));
+        jedisCLusterNodes.add(new HostAndPort("114.80.18.42",7001));
+        jedisCLusterNodes.add(new HostAndPort("114.80.18.41",7003));
+        jedisCLusterNodes.add(new HostAndPort("114.80.18.43s",7005));
         JedisCluster jedisCluster = new JedisCluster(jedisCLusterNodes);
         return jedisCluster;
     }
